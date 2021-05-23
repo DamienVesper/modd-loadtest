@@ -1,0 +1,39 @@
+{
+  "name": "modd-loadtest",
+  "version": "1.0.0",
+  "description": "A load tester for Modd.IO games",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamienVesper/modd-loadtest.git"
+  },
+  "keywords": [
+    "moddio",
+    "websocket",
+    "multiplayer"
+  ],
+  "author": "DamienVesper",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/DamienVesper/modd-loadtest/issues"
+  },
+  "homepage": "https://github.com/DamienVesper/modd-loadtest#readme",
+  "devDependencies": {
+    "@types/node": "^15.6.0",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "eslint": "^7.27.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.23.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "@clusterws/cws": "^3.0.0",
+    "ws": "^7.4.5"
+  }
+}
