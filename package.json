@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "@clusterws/cws": "^3.0.0",
+    "lz-string": "^1.4.4",
     "ws": "^7.4.5"
   }
 }

@@ -5,12 +5,14 @@ import { hideBin } from 'yargs/helpers';
 
 interface Args {
     ip: string,
-    port: number
+    port: number,
+    maxBots: number
 }
 
 const argv = yargs(hideBin(process.argv)).options({
     ip: { type: `string`, default: `127.0.0.1` },
-    port: { type: `number`, default: 2000 }
+    port: { type: `number`, default: 2000 },
+    maxBots: { type: `number`, default: 1 }
 }).argv;
 
 const config = {
@@ -18,7 +20,8 @@ const config = {
     version,
 
     ip: (argv as Args).ip,
-    port: (argv as Args).port
+    port: (argv as Args).port,
+    maxBots: (argv as Args).maxBots
 };
 
 export default config;

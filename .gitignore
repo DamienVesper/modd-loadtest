@@ -77,3 +77,6 @@ typings/
 
 # TypeScript build
 build/
+
+# Original script from moddio/loadtest
+bot.js
