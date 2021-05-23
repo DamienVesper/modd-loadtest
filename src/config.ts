@@ -4,11 +4,13 @@ import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 
 interface Args {
-    ip: string
+    ip: string,
+    port: number
 }
 
 const argv = yargs(hideBin(process.argv)).options({
-    ip: { type: `string`, default: `127.0.0.1` }
+    ip: { type: `string`, default: `127.0.0.1` },
+    port: { type: `number`, default: 2000 }
 }).argv;
 
 const config = {
@@ -16,7 +18,7 @@ const config = {
     version,
 
     ip: (argv as Args).ip,
-    port: process.env.NODE_ENV === `prod` ? 8750 : 8080
+    port: (argv as Args).port
 };
 
 export default config;
