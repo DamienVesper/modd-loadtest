@@ -8,6 +8,7 @@ import createBot from './bot';
 logSplash();
 
 log(`green`, `Connecting to ${config.ip}:${config.port}...`);
+log(`cyan`, `Creating ${config.maxBots} bots...`);
 
 for (let i = 0; i < config.maxBots; i++) createBot();
 

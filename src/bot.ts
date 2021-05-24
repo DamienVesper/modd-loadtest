@@ -26,9 +26,8 @@ const createBot = () => {
         }, 500);
     });
 
-    socket.on(`close`, () => {
-        log(`red`, `Bot disconnected.`);
-    });
+    socket.on(`error`, (err) => log(`red`, `Bot failed to connect to server: ${err.message}.`));
+    socket.on(`close`, () => log(`cyan`, `Bot disconnected.`));
 
     return socket;
 };
