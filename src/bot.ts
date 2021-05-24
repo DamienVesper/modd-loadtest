@@ -11,9 +11,9 @@ const createBot = async (id: number) => {
     socket.on(`open`, async () => {
         log(`magenta`, `[${id}] Bot connected.`);
 
+        const int = randomInt(1000, 2000);
         socket.send(JSON.stringify([`@`, `1`]));
 
-        const int = randomInt(1000, 2000);
         socket.send(JSON.stringify([`\u0004`, { number: int, isAdBlockEnabled: false }]));
         socket.send(JSON.stringify([`\n`, [0, 0]]));
     });
