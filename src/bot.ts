@@ -6,7 +6,7 @@ import log from './utils/log';
 import { WebSocket } from '@clusterws/cws';
 
 const createBot = async () => {
-    const socket: WebSocket = new WebSocket(`ws://${config.ip}:${config.port}/?token=${config.token}`);
+    const socket: WebSocket = new WebSocket(`${config.ssl ? `wss` : `ws`}://${config.ip}:${config.port}/?token=${config.token}`);
 
     socket.on(`open`, async () => {
         log(`magenta`, `Bot connected.`);

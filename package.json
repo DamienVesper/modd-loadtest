@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "dev": "node ./build/src/index.js --maxBots 50",
+    "dev": "node ./build/src/index.js",
     "dist": "yarn build && yarn dev",
     "dev:lint": "eslint . --fix"
   },
