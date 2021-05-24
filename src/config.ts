@@ -11,7 +11,7 @@ interface Args {
 
 const argv = yargs(hideBin(process.argv)).options({
     ip: { type: `string`, default: `127.0.0.1` },
-    port: { type: `number`, default: 2000 },
+    port: { type: `number`, default: 2001 },
     maxBots: { type: `number`, default: 1 }
 }).argv;
 
