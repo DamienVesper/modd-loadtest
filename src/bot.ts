@@ -6,7 +6,7 @@ import log from './utils/log';
 import { WebSocket } from '@clusterws/cws';
 
 const createBot = () => {
-    const socket: WebSocket = new WebSocket(`ws://${config.ip}:${config.port}`, `netio1`);
+    const socket: WebSocket = new WebSocket(`ws://${config.ip}:${config.port}/?token=${config.token}`);
 
     socket.on(`open`, () => {
         log(`magenta`, `Bot connected.`);
