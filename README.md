@@ -20,7 +20,7 @@ yarn
 This will create a `node_modules` directory in that of your project and add the packages there.
 
 ### Compiling the Project
-This project utilizes [TypeScript](https://www.typescriptlang.org). It is a superset of JavaScript nand as so, needs to be compiled to JavaScript before execution.
+This project utilizes [TypeScript](https://www.typescriptlang.org). It is a superset of JavaScript and as so, needs to be compiled to it before execution.
 
 To build the project, run:
 ```sh
