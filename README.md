@@ -28,7 +28,7 @@ yarn build
 ```
 
 This will create a `build` directory in that of your project and compile the project there.
-Note: if you wish to build and serve with default configuration directly, you can run `yarn dist`.
+Note: if you wish to build and serve directly, you can run `yarn dist`.
 
 ### Running the Project
 To execute the project, run:
