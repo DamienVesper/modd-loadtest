@@ -27,7 +27,7 @@ jobs:
         with:
           cmd: install
 
-      - name: Build Project
+      - name: Build Repository
         uses: borales/actions-yarn@v2.3.0
         with:
           cmd: build
