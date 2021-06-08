@@ -4,8 +4,8 @@
 <br>
 
 <div align="center">
+    <img src="https://img.shields.io/github/v/release/DamienVesper/modd-loadtest?style=for-the-badge&color=3458eb">
     <img src="https://img.shields.io/github/contributors/DamienVesper/modd-loadtest?style=for-the-badge&color=3458eb">
-    <img src="https://img.shields.io/github/last-commit/DamienVesper/modd-loadtest?style=for-the-badge&color=3458eb">
     <img src="https://img.shields.io/github/languages/code-size/DamienVesper/modd-loadtest?style=for-the-badge&color=3458eb">
 </div>
 
