@@ -39,6 +39,6 @@
   },
   "dependencies": {
     "@clusterws/cws": "^3.0.0",
-    "ws": "^7.5.0"
+    "ws": "^7.5.1"
   }
 }
