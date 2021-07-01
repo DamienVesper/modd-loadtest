@@ -38,7 +38,6 @@
     "yargs": "^17.0.1"
   },
   "dependencies": {
-    "@clusterws/cws": "^3.0.0",
-    "ws": "^7.5.1"
+    "@clusterws/cws": "^3.0.0"
   }
 }
