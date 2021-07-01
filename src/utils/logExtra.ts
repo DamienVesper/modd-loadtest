@@ -1,9 +1,15 @@
 import { author, version } from '../../package.json';
 
+/**
+ * Print a header in the console.
+ */
 const logHeader = () => {
     console.log(`\x1b[34m`, `--------------------------------------------------`);
 };
 
+/**
+ * Print the splash in the console.
+ */
 const logSplash = () => {
     console.log(`\x1b[34m`, `
     

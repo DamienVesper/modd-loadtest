@@ -19,6 +19,9 @@ const argv = (yargs(hideBin(process.argv)).options({
     maxBots: { type: `number`, default: 50 }
 }).argv as Args);
 
+/**
+ * Configuration for the program.
+ */
 const config = {
     name,
     version,

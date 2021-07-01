@@ -5,6 +5,9 @@ import { logHeader, logSplash } from './utils/logExtra';
 
 import createBot from './bot';
 
+/**
+ * Create the bots in an asynchronous loop.
+ */
 const createBots = async () => {
     logSplash();
 

@@ -1,3 +1,9 @@
+/**
+ * Generate a random string of alphanumerical characters.
+ * @author DamienVesper
+ * @param length The length of the string.
+ * @returns The string of randomized characters.
+ */
 const randomString = (length: number) => {
     const alpha = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789`;
 
