@@ -6,7 +6,6 @@
   "scripts": {
     "build": "tsc",
     "dev": "node ./build/src/index.js",
-    "dist": "yarn build && yarn dev",
     "dev:lint": "eslint . --fix --ext .ts"
   },
   "repository": {
