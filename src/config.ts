@@ -11,6 +11,9 @@ interface Args {
     maxBots: number
 }
 
+/**
+ * Passable arguments to the node CLI.
+ */
 const argv = (yargs(hideBin(process.argv)).options({
     ip: { type: `string`, default: `127.0.0.1` },
     ssl: { type: `boolean`, default: false },
