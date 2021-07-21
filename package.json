@@ -1,6 +1,6 @@
 {
   "name": "modd-loadtest",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A load tester for Modd.IO games",
   "main": "src/index.js",
   "scripts": {
