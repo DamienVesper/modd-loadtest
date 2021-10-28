@@ -25,6 +25,7 @@
   "homepage": "https://github.com/DamienVesper/modd-loadtest#readme",
   "devDependencies": {
     "@types/node": "^16.11.1",
+    "@types/ws": "^8.2.0",
     "@types/yargs": "^17.0.4",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
@@ -37,6 +38,6 @@
     "yargs": "^17.2.1"
   },
   "dependencies": {
-    "@clusterws/cws": "^3.0.0"
+    "ws": "^8.2.3"
   }
 }

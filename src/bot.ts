@@ -3,7 +3,7 @@ import config from './config';
 import randomInt from './utils/randomInt';
 import log from './utils/log';
 
-import { WebSocket } from '@clusterws/cws';
+import { WebSocket } from 'ws';
 import randomString from './utils/randomString';
 
 /**
