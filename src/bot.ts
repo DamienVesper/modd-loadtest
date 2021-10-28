@@ -12,7 +12,7 @@ import randomString from './utils/randomString';
  * @param id The ID of the bot.
  * @returns The websocket connection of the bot.
  */
-const createBot = async (id: number) => {
+const createBot = async (id: number): Promise<WebSocket> => {
     const socket: WebSocket = new WebSocket(`${config.ssl ? `wss` : `ws`}://${config.ip}:${config.port}/?token=${config.token}`);
 
     socket.on(`open`, () => {
