@@ -1,22 +1,26 @@
+
 /**
- * Print to the console.
+ * Log something to console.
  * @author DamienVesper
- * @param color The color to print as.
- * @param content The content to print.
+ * @param color The color to log as.
+ * @param content The content to log.
  */
-const log = (color: string, ...content: any[]) => {
+const log = (color: `black` | `red` | `green` | `yellow` | `blue` | `magenta` | `cyan` | `white`, ...content: string[]): void => {
     // Set timing variables.
     const time = new Date();
     const second = time.getSeconds().toString().padStart(2, `0`);
     const minute = time.getMinutes().toString().padStart(2, `0`);
+
     const hour = time.getHours().toString().padStart(2, `0`);
     const day = time.getDate().toString().padStart(2, `0`);
+
     const month = (time.getMonth() + 1).toString().padStart(2, `0`);
     const year = time.getFullYear().toString();
+
     const formattedTime = `[${month}-${day}-${year} ${hour}:${minute}:${second}]`;
 
     // Get specified color.
-    let logColor;
+    let logColor: string;
     switch (color) {
         case `black`:
             logColor = `\x1b[30m`;
@@ -44,13 +48,7 @@ const log = (color: string, ...content: any[]) => {
             break;
     }
 
-    let logContent = ``;
-    for (const arg of content) {
-        if (typeof arg === `object`) logContent += JSON.stringify(arg);
-        else logContent += arg.toString();
-    }
-
-    console.log(logColor || `\x1b[37m`, formattedTime, logContent);
+    console.log(logColor, formattedTime, content.join(` `));
 };
 
 export default log;

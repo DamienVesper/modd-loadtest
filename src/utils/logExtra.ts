@@ -3,14 +3,14 @@ import { author, version } from '../../package.json';
 /**
  * Print a header in the console.
  */
-const logHeader = () => {
+const logHeader = (): void => {
     console.log(`\x1b[34m`, `--------------------------------------------------`);
 };
 
 /**
  * Print the splash in the console.
  */
-const logSplash = () => {
+const logSplash = (): void => {
     console.log(`\x1b[34m`, `
     
     ███╗   ███╗ ██████╗ ██████╗ ██████╗       ██╗      ██████╗  █████╗ ██████╗ ████████╗███████╗███████╗████████╗

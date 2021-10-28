@@ -4,7 +4,7 @@
  * @param length The length of the string.
  * @returns The string of randomized characters.
  */
-const randomString = (length: number) => {
+const randomString = (length: number): string => {
     const alpha = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789`;
 
     let text = ``;

@@ -4,10 +4,10 @@ import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 
 interface Args {
-    ip: string,
-    ssl: boolean,
-    port: number,
-    token: string,
+    ip: string
+    ssl: boolean
+    port: number
+    token: string
     maxBots: number
 }
 
