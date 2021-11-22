@@ -32,13 +32,13 @@ This will create a `build` directory in that of your project and compile the pro
 ### Running the Project
 To execute the project, run:
 ```sh
-yarn dev
+yarn start
 ```
 
-This will use the default configurations provided by the project. However, there are command-line arguments that you can specify to change them.
+This will use the default configurations provided by the project. However, you can specify arguments to change some parameters of the program.
 For example:
 ```sh
-yarn dev --ip 127.0.0.1 --ssl false --port 2001 --token abc --maxBots 50
+yarn start --ip 127.0.0.1 --ssl false --port 2001 --token abc --maxBots 50
 ```
 
 Any or all of these arguments can be specified or excluded. Suit them to your own needs.
