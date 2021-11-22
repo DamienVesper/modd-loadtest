@@ -1,2 +1,2 @@
-# Ignore compiled TypeScript build directory.
-build/
+# TypeScript build
+dist/

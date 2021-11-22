@@ -1,12 +1,19 @@
 {
   "name": "modd-loadtest",
+  "description": "A load tester for Modd.io games",
+  "packageManager": "yarn@3.1.0",
   "version": "1.2.1",
-  "description": "A load tester for Modd.IO games",
-  "main": "src/index.js",
+  "main": "src/index.ts",
   "scripts": {
     "build": "tsc",
-    "dev": "node ./build/src/index.js",
-    "dev:lint": "eslint . --fix --ext .ts"
+    "dev": "ts-node ./src/index.ts",
+    "start": "node ./build/src/index.js",
+    "dev:lint": "eslint . --fix --ext .ts",
+    "dev:lint:ci": "eslint . --ext .ts"
+  },
+  "engines": {
+    "yarn": ">=3.1.0",
+    "node": ">=16.10.0"
   },
   "repository": {
     "type": "git",
@@ -27,13 +34,14 @@
     "@types/node": "^16.11.9",
     "@types/ws": "^8.2.0",
     "@types/yargs": "^17.0.7",
-    "@typescript-eslint/eslint-plugin": "^4.33.0",
-    "@typescript-eslint/parser": "^4.33.0",
-    "eslint": "^7.32.0",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.3.0",
     "eslint-config-standard-with-typescript": "^21.0.1",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.1",
+    "ts-node": "^10.4.0",
     "typescript": "^4.5.2",
     "yargs": "^17.2.1"
   },
