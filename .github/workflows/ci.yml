@@ -6,8 +6,8 @@ on:
     branches: [dependabot/**]
 
 jobs:
-  build:
-    name: Build
+  nodejs:
+    name: Node.js
     runs-on: ubuntu-latest
 
     steps:
@@ -15,9 +15,9 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install pNPM
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v2.0.1
         with:
-          version: 6.26.3
+          version: 6.20.3
 
       - name: Install Node.js
         uses: actions/setup-node@v2
@@ -30,3 +30,6 @@ jobs:
 
       - name: Build
         run: pnpm run build
+
+      - name: Lint
+        run: pnpm run dev:lint:ci
