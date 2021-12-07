@@ -1,7 +1,6 @@
 {
   "name": "modd-loadtest",
   "description": "A load tester for Modd.io games",
-  "packageManager": "yarn@3.1.0",
   "version": "1.2.1",
   "main": "src/index.ts",
   "scripts": {
