@@ -6,27 +6,25 @@ on:
     branches: [dependabot/**]
 
 jobs:
-  build:
-    name: Build
+  lint:
+    name: Lint
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16]
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Install pNPM
-        uses: pnpm/action-setup@v2
-        with:
-          version: 6.26.3
-
-      - name: Install Node.js
+      - name: Install Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
-          node-version: 16
-          cache: pnpm
+          node-version: ${{ matrix.node-version }}
 
       - name: Install Packages
-        run: pnpm install
+        run: yarn
 
       - name: Lint
-        run: pnpm run dev:lint:ci
+        run: yarn dev:lint:ci
